@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+
+:root {
+  --farbe: #ffa500;
+}
+
+body {
+  background-color: #0e0c0c;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+}
+
+header nav {
+  /* border: 2px solid wheat; */
+  height: 100vh;
+  width: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+nav p {
+  color: var(--farbe);
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  writing-mode: vertical-rl;
+  margin: 1em 2em;
+}
+
+nav i {
+  margin: 1em 0.2em;
+  padding: 0.1em;
+  color: #fff;
+}
+
+nav i:hover {
+  color: var(--farbe);
+}
+
+.container {
+  height: 90vh;
+  width: 40vw;
+  margin: 1em;
+  margin-left: 2em;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  color: #fff;
+  font-family: "Julee", cursive;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+.container span {
+  color: var(--farbe);
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5em;
+}
+
+.bild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+h2 {
+  text-align: center;
+  color: var(--farbe);
+  font-family: "Great Vibes";
+  font-size: 5em;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.portfolio a {
+  color: #fff;
+  font-family: "Julee", cursive;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio a:hover {
+  color: var(--farbe);
+}
+
+/* ------About------ */
+
+.about-content {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.about {
+    margin: 0 auto;
+}
+
+
+.about h2 {
+  margin-left: 0.5em;
+}
+
+.about p {
+  color: #fff;
+  font-family: "Julee", cursive;
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills p {
+  color: #fff;
+  font-family: "Julee", cursive;
+  font-size: 1.5em;
+  margin: 0.6em 0;
+}
+
+.box {
+  border: 2px solid #fff;
+  width: 250px;
+  height: 500px;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.box span {
+  color: var(--farbe);
+  font-family: "Great Vibes";
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+
+/* ------Kontact------ */
+
+
