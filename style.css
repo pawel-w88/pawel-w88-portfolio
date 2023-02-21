@@ -4,11 +4,13 @@
 
 :root {
   --farbe: #ffa500;
+  --color: #fff;
 }
 
 body {
   background-color: #0e0c0c;
   box-sizing: border-box;
+  margin-top: 5rem;
 }
 
 .content {
@@ -16,7 +18,7 @@ body {
 }
 
 header nav {
-  /* border: 2px solid wheat; */
+  margin-top: -5rem;
   height: 100vh;
   width: 5em;
   display: flex;
@@ -34,7 +36,7 @@ nav p {
 nav i {
   margin: 1em 0.2em;
   padding: 0.1em;
-  color: #fff;
+  color: var(--color);
 }
 
 nav i:hover {
@@ -43,21 +45,20 @@ nav i:hover {
 
 .container {
   height: 90vh;
-  width: 40vw;
-  margin: 1em;
-  margin-left: 2em;
+  width: 35vw;
+  margin: 0;
   padding: 2em;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .container p {
-  color: #fff;
+  color: var(--color);
   font-family: "Julee", cursive;
   font-size: 1.3em;
   line-height: 1.3em;
-  margin: 0;
+  margin-top: 1em;
 }
 
 .container span {
@@ -67,23 +68,21 @@ nav i:hover {
 }
 
 .bild {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2em;
+  margin: 2em auto;
 }
 
 h2 {
   text-align: center;
   color: var(--farbe);
   font-family: "Great Vibes";
-  font-size: 5em;
+  font-size: 4em;
   margin: 0;
+  margin-top: 0.5em;
   letter-spacing: 0.1em;
 }
 
 .portfolio a {
-  color: #fff;
+  color: var(--color);
   font-family: "Julee", cursive;
   text-decoration: none;
   font-size: 1.3em;
@@ -101,43 +100,44 @@ h2 {
 
 .about-content {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
 .about {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-
-.about h2 {
+.about > h2 {
   margin-left: 0.5em;
 }
 
 .about p {
-  color: #fff;
+  color: var(--color);
   font-family: "Julee", cursive;
   font-size: 1.5em;
   margin-left: 2em;
 }
+
 .skills {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .skills p {
-  color: #fff;
+  color: var(--color);
   font-family: "Julee", cursive;
   font-size: 1.5em;
   margin: 0.6em 0;
 }
 
 .box {
-  border: 2px solid #fff;
-  width: 250px;
+  border: 2px solid var(--color);
+  width: 60vw;
   height: 500px;
   text-align: center;
-  margin-right: 1em;
+  margin: 0.5em;
 }
 
 .box span {
@@ -148,6 +148,128 @@ h2 {
   padding: 0.5em 0;
 }
 
-/* ------Kontact------ */
+/* ------Kontakt------ */
 
+.kontakt {
+  display: flex;
+}
+.title {
+  text-align: center;
+}
 
+.kontakt-datei {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.kontakt-datei i {
+  color: var(--farbe);
+  margin-top: 0.5em 0;
+}
+
+.kontakt-datei a {
+  color: var(--color);
+  padding: 0.5em 0;
+  text-decoration: none;
+  font-family: "Great Vibes";
+  font-size: 2em;
+}
+
+.kontakt-datei a:hover {
+  color: var(--farbe);
+}
+
+.kontakt-datei p {
+  color: var(--color);
+  font-family: "Great Vibes";
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+/* -----Forms------ */
+
+label {
+  color: var(--color);
+  font-family: "Great Vibes";
+  font-size: 2em;
+}
+
+input,
+textarea,
+button {
+  display: block;
+  width: 90vw;
+  margin: 1em auto;
+}
+
+button {
+  height: 2em;
+  font-family: "Great Vibes";
+  font-size: 1.5em;
+}
+
+/* ------media----- */
+
+@media (min-width: 769px) {
+  .body {
+    margin-top: 0;
+  }
+
+  .container p {
+    color: var(--color);
+    font-family: "Julee", cursive;
+    font-size: 1.8em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .bild {
+    margin-left: 2em;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kontakt-datei {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kontakt-datei i {
+    color: var(--farbe);
+    margin-top: 0.5em;
+  }
+
+  .kontakt-datei a {
+    color: var(--color);
+    padding: 0.5em;
+    text-decoration: none;
+    font-family: "Great Vibes";
+    font-size: 2em;
+  }
+
+  .kontakt-datei a:hover {
+    color: var(--farbe);
+  }
+
+  .kontakt-datei p {
+    color: var(--color);
+    font-family: "Great Vibes";
+    font-size: 2em;
+    margin: 0.5em;
+  }
+}

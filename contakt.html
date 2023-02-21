@@ -20,7 +20,10 @@
   </head>
 
   <body>
-    <section>
+    <div class="title">
+      <h2>Kontakte</h2>
+    </div>
+    <section class="kontakt">
       <header>
         <nav>
           <p>Pawel-W88</p>
@@ -33,6 +36,57 @@
           <a href="contakt.html"><i class="fa-brands fa-contao fa-3x"></i></a>
         </nav>
       </header>
+      
+      <div class="kontakt-datei">
+        <div>
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <a
+            href="http://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+          <p>Pawel Wojciechowski</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-github fa-2x"></i>
+          <a href="http://github.com/" target="_blank" rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <p>Pawel-W88</p>
+        </div>
+        <div>
+          <i class="fa-brands fa-square-twitter fa-2x"></i>
+          <a
+            href="http://twitter.com/EkPawlak"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter</a
+          >
+          <p>Pawel Wojciechowski</p>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-mobile-screen-button fa-1x"></i>Mobile</p>
+          <p>+491631499812</p>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-at fa-1x"></i>Gmail</p>
+          <p>rws.pawlak@gmail.com</p>
+        </div>
+      </div>
     </section>
+
+    <form action="https://formspree.io/f/mrgvqlqj" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" />
+      </label>
+
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
   </body>
 </html>
