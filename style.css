@@ -79,6 +79,8 @@ h2 {
   color: var(--farbe);
   font-family: var(--font1);
   font-size: 4em;
+  margin-bottom: 4em;
+  margin-left: 2em;
   letter-spacing: 0.1em;
   margin: 0;
 }
